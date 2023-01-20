@@ -10,7 +10,7 @@ body {
 .allsettings {
     display: flex;
     flex-direction: row;
-    gap: 100px;
+    gap: 80px;
     justify-content: center;
 }
 
@@ -31,4 +31,15 @@ button {
     height: 50px;
     font-size: 20px;
 }
-   
+
+.take_picture {
+    display: flex;
+    justify-content: center;
+    margin-right: 33px;
+    
+}
+
+.take_picture_button {
+    width: 140px;
+    margin-top: 50px;
+}

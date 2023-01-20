@@ -1,17 +1,17 @@
-var heading = document.querySelector("h2");
-var button = document.querySelector("button");
-var buttonLower = document.querySelector(".lower");
-var heading2 = document.querySelector(".h2shutter");
-var buttonShutterUp = document.querySelector(".shutter_up")
-var buttonShutterDown = document.querySelector(".shutter_down")
-var heading3 = document.querySelector(".h2apt");
-var buttonApertureUp = document.querySelector(".aperture_up")
-var buttonApertureDown = document.querySelector(".aperture_down")
-
+const heading = document.querySelector("h2");
+const button = document.querySelector("button");
+const buttonLower = document.querySelector(".lower");
+const heading2 = document.querySelector(".h2shutter");
+const buttonShutterUp = document.querySelector(".shutter_up")
+const buttonShutterDown = document.querySelector(".shutter_down")
+const heading3 = document.querySelector(".h2apt");
+const buttonApertureUp = document.querySelector(".aperture_up")
+const buttonApertureDown = document.querySelector(".aperture_down")
+const buttonTakePicture = document.querySelector(".take_picture_button")
 
 const owner = {
     firstName: "Julia",
-    surName: "Kalvik",
+    surname: "Kalvik",
     age: 26,
     interests: ["Photography", "Coding", "Food"]
   }
@@ -22,13 +22,18 @@ const owner = {
       model: "R6",
       lens: "Sigma Art 50mm",
       age: 1,
-      owner: "Julia"
+      turnedOn: true,
+      owner: owner,
+
     }
   
   const cameraSettings = {
       iso: 100,
       shutterSpeed: 250,
-      aperture: 1.4
+      aperture: 1.4,
+      takePicture() {
+        alert("📸");
+      }
     }
 
     const cameraSettingsIso = {
@@ -53,13 +58,19 @@ const owner = {
   console.log(camera[1])
 
 function changeIsoHigher() {
-    heading.innerHTML = "ISO: 200" ;
+    if(cameraSettings.iso < 12000){
+        cameraSettings.iso = cameraSettings.iso + 100
+    }
+    heading.innerHTML = "ISO: "+cameraSettings.iso ;
 }
 
   button.onclick = changeIsoHigher;
 
   function changeIsoLower() {
-    heading.innerHTML = "ISO: 100";
+    if(cameraSettings.iso != 100){
+        cameraSettings.iso = cameraSettings.iso - 100
+    }
+    heading.innerHTML = "ISO: "+cameraSettings.iso; 
   }
 
   buttonLower.onclick = changeIsoLower;
@@ -87,3 +98,6 @@ function changeIsoHigher() {
   }
 
   buttonApertureDown.onclick = changeApertureDown;
+
+
+  buttonTakePicture.onclick = cameraSettings.takePicture

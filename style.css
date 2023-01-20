@@ -1,38 +1,45 @@
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+    background-color: gray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.allsettings {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    justify-content: center;
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+    color: yellow;
+    text-align: center;
+}
+
+h2 {
+    color: orange;
+}
+
+button {
+    color: yellow;
+    background-color: darkgray;
+    border: none;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.take_picture {
+    display: flex;
+    justify-content: center;
+    margin-right: 33px;
+    
+}
+
+.take_picture_button {
+    width: 140px;
+    margin-top: 50px;
 }

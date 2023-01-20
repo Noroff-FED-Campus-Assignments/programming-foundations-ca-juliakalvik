@@ -2,11 +2,43 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Programming Foundations Course Assignment</title>
   </head>
+
   <body>
-    This is a Vite App
+    <div class="header">
+      <h1>Your Camera Settings</h1>
+    </div>
+  <section class="allsettings">
+      <div class="camera_iso">
+        <h2>ISO: 100</h2>
+        <button>Higher</button>
+        <button class="lower">Lower</button>
+      </div>
+  
+      <div class="camera_shutter">
+        <h2 class="h2shutter">Shutter speed: 250</h2>
+        <button class="shutter_up">Higher</button>
+        <button class="shutter_down">Lower</button>
+      </div>
+  
+      <div class="camera_aperture">
+        <h2 class="h2apt">Aperture: 1.4</h2>
+        <button class="aperture_up">Higher</button>
+        <button class="aperture_down">Lower</button>
+      </div>
+      
+    </section>
+    
+    <div class="take_picture">
+      <button class="take_picture_button">Take picture!</button>
+    </div>
+    
+
+    <script src="cameraSettings.js">
+    </script>
+    
   </body>
 </html>

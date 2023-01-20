@@ -1,23 +1,12 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=9764556&assignment_repo_type=AssignmentRepo)
+
 # Introduction
 
 This is a school assignment built with Vite. This project uses prettier and eslint for formatting.
 
-## Getting started
+The purpose of the assignment is to show that I know how to use object with a string, number, boolean, array and function property.
 
-```bash
-# install deps
-npm install
-
-# Run the dev server
-npm run dev
-```
-
-## _REPLACE_ Object
-
-// Use this file to write your report.
-
-This object has the following properties:
+I have several objects: cameraInfo, cameraSettings, cameraSettingsIso and owner.
+The cameraInfo has string, number, boolean and object. The cameraSettings has numbers and function. The cameraSettingsIso has strings, numbers, arrays and objects. The owner has string, number and array.
 
 ## Minimum acceptance Criteria
 

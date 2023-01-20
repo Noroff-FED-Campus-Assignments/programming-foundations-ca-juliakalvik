@@ -23,6 +23,23 @@ const owner = {
       shutterSpeed: 250,
       aperture: 1.4
     }
+
+    const cameraSettingsIso = {
+        iso: [
+            {
+                name: "low",
+                ratio: 100,
+            },
+            {
+                name: "middle",
+                ratio: 500,
+            },
+            {
+                name: "high",
+                ratio: 1000
+            }
+        ]
+    };
   
   const camera = [cameraInfo, cameraSettings];
   

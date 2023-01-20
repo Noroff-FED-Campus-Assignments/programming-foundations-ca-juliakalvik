@@ -8,6 +8,8 @@ The purpose of the assignment is to show that I know how to use object with a st
 I have several objects: cameraInfo, cameraSettings, cameraSettingsIso and owner.
 The cameraInfo has string, number, boolean and object. The cameraSettings has numbers and function. The cameraSettingsIso has strings, numbers, arrays and objects. The owner has string, number and array.
 
+I also added HTML and some CSS to make a very simple visible user interface. 
+
 ## Minimum acceptance Criteria
 
 - Object has a `string` property
